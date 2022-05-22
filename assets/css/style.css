@@ -22,16 +22,20 @@ section {
     display: flex;
     align-items: center;
 }
+
 h1 {
     font-weight: bold;
 }
+
 h2 {
     font-weight: bold;
 }
+
 h3 {
     font-weight: bold;
 
 }
+
 /* section-image and bio */
 .headshot-container img {
     display: flex;
@@ -46,7 +50,7 @@ h3 {
     padding: 30px;
     font-size: 25px;
     color: var(--color-four);
-    
+
 
 }
 
@@ -85,18 +89,19 @@ h3 {
     margin: 5px;
 
 }
+
 #ask-a-question-submit {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border: none;
     border-radius: 5px;
     padding: 5px;
-    
+
 }
 
 .mapouter {
     padding: 30px;
-    
+
 }
 
 .gmap_canvas {
@@ -107,6 +112,56 @@ h3 {
     border-radius: 20px;
     border: 2px solid black;
 }
+
 .footnotes {
     text-align: center;
+}
+
+
+@media screen and (max-width: 786px) {
+    header {
+        justify-content: center;
+        display: flex;
+        background-color: var(--primary-color);
+        padding: 15px;
+        font-size: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .headshot-container img {
+        display: flex;
+        padding: 30px;
+        width: 250px;
+        border-radius: 40px;
+    }
+
+    .bio-container {
+        padding: 30px;
+        font-size: 25px;
+        color: var(--color-four);
+        text-align: center;
+    }
+
+    .contact-info p {
+        color: var(--color-four);
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .email-container {
+        color: var(--color-four);
+        font-size: 25px;
+        width: 80%;
+    }
+    .gmap_canvas {
+        width: 250px;
+        height: 250px;
+    }
 }
