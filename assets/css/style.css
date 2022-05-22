@@ -1,55 +1,112 @@
 html {
-    --primary-color: #ffef96;
-    --secondary-color: #50394c;
+    --secondary-color: #ffef96;
+    --primary-color: #50394c;
     --color-three: #b2b2b2;
-    --color-four: #f4e1d2;
-}
-header {
-    display: flex;
-    background-color: var(--primary-color);  
-    padding: 15px;
-    font-size: 20px;
-    
-}
-body {
-    background-color: var(--secondary-color);
-    margin: 0px;
-}
-section {
-    display: flex;
+    --color-four: #333333;
 }
 
+
+header {
+    display: flex;
+    background-color: var(--primary-color);
+    padding: 15px;
+    font-size: 20px;
+
+}
+
+body {
+    margin: 0px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+h1 {
+    font-weight: bold;
+}
+h2 {
+    font-weight: bold;
+}
+h3 {
+    font-weight: bold;
+
+}
 /* section-image and bio */
-.headshot-container img {   
+.headshot-container img {
     display: flex;
     padding: 30px;
     width: 400px;
     border-radius: 40px;
 
-    
+
 }
+
 .bio-container {
     padding: 30px;
     font-size: 25px;
+    color: var(--color-four);
+    
+
+}
+
+.bio-container h3 {
+    font-size: 15px;
     color: var(--color-three);
 }
 
 
 /* footer-contact us section */
 
-footer {
-display: flex;
-justify-content: space-around;
-align-items: center;
+.triple-footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
 .contact-info p {
-    color: var(--color-three);
+    color: var(--color-four);
     font-size: 35px;
 }
+
+.email-container {
+    color: var(--color-four);
+    font-size: 25px;
+    width: 20%;
+    text-align: center;
+    box-shadow: 0 4px 48px 0 rgb(51 51 51 / 10%);
+    padding: 10px 20px;
+}
+
+.email-request {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-four);
+    margin: 5px;
+
+}
+#ask-a-question-submit {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+
+.mapouter {
+    padding: 30px;
+    
+}
+
 .gmap_canvas {
     overflow: hidden;
     background: none !important;
     height: 400px;
     width: 400px;
     border-radius: 20px;
+    border: 2px solid black;
+}
+.footnotes {
+    text-align: center;
 }
