@@ -1,0 +1,55 @@
+html {
+    --primary-color: #ffef96;
+    --secondary-color: #50394c;
+    --color-three: #b2b2b2;
+    --color-four: #f4e1d2;
+}
+header {
+    display: flex;
+    background-color: var(--primary-color);  
+    padding: 15px;
+    font-size: 20px;
+    
+}
+body {
+    background-color: var(--secondary-color);
+    margin: 0px;
+}
+section {
+    display: flex;
+}
+
+/* section-image and bio */
+.headshot-container img {   
+    display: flex;
+    padding: 30px;
+    width: 400px;
+    border-radius: 40px;
+
+    
+}
+.bio-container {
+    padding: 30px;
+    font-size: 25px;
+    color: var(--color-three);
+}
+
+
+/* footer-contact us section */
+
+footer {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.contact-info p {
+    color: var(--color-three);
+    font-size: 35px;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+}
