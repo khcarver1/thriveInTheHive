@@ -13,6 +13,12 @@ header {
     font-size: 20px;
 
 }
+header img {
+    width: 160px;
+    height: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 body {
     margin: 0px;
@@ -115,18 +121,21 @@ h3 {
 
 .footnotes {
     text-align: center;
+    padding: 5px;
 }
 
 
 @media screen and (max-width: 786px) {
     header {
-        justify-content: center;
         display: flex;
         background-color: var(--primary-color);
         padding: 15px;
-        font-size: 10px;
+        font-size: 15px;
         width: 100%;
-        text-align: center;
+    }
+    header img {
+        width: 80px;
+        height: 50px;
     }
 
     section {
@@ -163,5 +172,7 @@ h3 {
     .gmap_canvas {
         width: 250px;
         height: 250px;
+        border-radius: 20px;
+
     }
 }
