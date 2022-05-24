@@ -22,6 +22,7 @@ headerElem.appendChild(headerNav);
 headerUl.style.display = "flex";
 headerUl.style.textAlign = "center";
 headerUl.style.listStyleType = "none";
+
 //Li A tags
 headerLi0A.style.color = "var(--secondary-color)";
 headerLi1A.style.color = "var(--secondary-color)";
@@ -32,12 +33,15 @@ headerLi0.style.textDecoration = "none";
 headerLi0.style.margin = "20px";
 headerLi1.style.margin = "20px";
 headerLi2.style.margin = "20px";
+headerLi0.style.fontSize = "20px";
+headerLi1.style.fontSize = "20px";
+headerLi2.style.fontSize = "20px";
 //headerNav
 headerNav.style.justifyContent = "space-around";
 //headerElem
-headerElem.style.width = "700px";
+headerElem.style.width = "100%";
 headerElem.style.display = "flex";
-headerElem.style.justifyContent = "end";
+headerElem.style.justifyContent = "space-evenly";
 headerElem.style.alignItems = "center";
 
 
@@ -61,11 +65,14 @@ function moBeeHiveLi0A() {
     beeHiveLi0A.style.height = "25px";
     headerLi0.style.display = "flex";
     headerLi0.style.alignItems = "center";
+    headerLi0.style.marginLeft = "-20px";
+
     headerLi0.appendChild(beeHiveLi0A);
     headerLi0.insertBefore(headerLi0A, headerLi0.children[2]);
 };
 function mlBeeHiveLi0A() {
     headerLi0.removeChild(beeHiveLi0A);
+    headerLi0.style.marginLeft = "20px";
 
 };
 headerLi1.addEventListener("mouseenter", moBeeHiveLi1A);
