@@ -20,9 +20,9 @@ headerElem.style.width = "700px";
 headerElem.style.display = "flex";
 headerElem.style.justifyContent = "end";
 headerElem.style.alignItems = "center";
-headerLi0.style.margin = "10px";
-headerLi1.style.margin = "10px";
-headerLi2.style.margin = "10px";
+headerLi0.style.margin = "15px";
+headerLi1.style.margin = "15px";
+headerLi2.style.margin = "15px";
 
 
 
@@ -43,8 +43,29 @@ headerLi0.style.textDecoration = "none";
 
 //Li
 headerLi0A.textContent = "Current Listings";
-headerLi1A.textContent = "Something";
-headerLi2A.textContent = "Something Else";
+
+headerLi1A.textContent = "Sell with Shelly";
+headerLi2A.textContent = "Testimonials";
 
 //setattr
 headerLi0A.setAttribute("href","www.ebay.com");
+
+headerLi0.addEventListener("mouseenter", moBeeHiveLi0A);
+headerLi0.addEventListener("mouseleave", mlBeeHiveLi0A);
+
+function moBeeHiveLi0A() {
+
+    beeHiveLi0A = document.createElement('img');
+    beeHiveLi0A.setAttribute("src","./assets/favicon/beehivefavicon.png");
+    beeHiveLi0A.style.width = "40px";
+    beeHiveLi0A.style.height = "25px";
+    headerLi0.style.display = "flex";
+    headerLi0.style.alignItems = "center";
+
+    headerLi0.appendChild(beeHiveLi0A);
+
+};
+function mlBeeHiveLi0A() {
+    headerLi0.removeChild(beeHiveLi0A);
+
+};
