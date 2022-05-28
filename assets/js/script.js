@@ -18,6 +18,8 @@ headerNav.appendChild(headerUl);
 headerElem.appendChild(headerNav);
 
 
+
+
 //style
 //ul
 headerUl.style.display = "flex";
@@ -33,6 +35,8 @@ headerLi1A.style.textShadow = "2px 2px 2px black";
 headerLi2A.style.textShadow = "2px 2px 2px black";
 
 headerLi0A.style.textDecoration = "none";
+headerLi1A.style.textDecoration = "none";
+headerLi2A.style.textDecoration = "none";
 //Li
 headerLi0.style.textDecoration = "none";
 headerLi0.style.margin = "30px";
@@ -52,6 +56,8 @@ headerElem.style.alignItems = "center";
 
 //setattr
 headerLi0A.setAttribute("href", "./currentlistings.html");
+headerLi1A.setAttribute("href", "./lostpage.html");
+headerLi2A.setAttribute("href", "./lostpage.html");
 
 //Li nav item names
 headerLi0A.textContent = "Current Listings";

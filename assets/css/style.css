@@ -141,6 +141,11 @@ h3 {
 }
 
 
+/* lostpage */
+#lost-page-section {
+    flex-direction: column;
+}
+
 @media screen and (max-width: 786px) {
     header {
         display: flex;
