@@ -31,7 +31,6 @@ headerLi2A.style.color = "var(--secondary-color)";
 headerLi0A.style.textShadow = "2px 2px 2px black";
 headerLi1A.style.textShadow = "2px 2px 2px black";
 headerLi2A.style.textShadow = "2px 2px 2px black";
-
 headerLi0A.style.textDecoration = "none";
 //Li
 headerLi0.style.textDecoration = "none";
@@ -49,7 +48,6 @@ headerElem.style.display = "flex";
 headerElem.style.justifyContent = "space-evenly";
 headerElem.style.alignItems = "center";
 
-
 //setattr
 headerLi0A.setAttribute("href", "./currentlistings.html");
 
@@ -61,25 +59,18 @@ headerLi1A.textContent = "Sell with Shelly";
 headerLi2A.textContent = "Testimonials";
 
 //beehive logo mouseover functions
-headerLi0.addEventListener("mouseenter", moBeeHiveLi0A);
-headerLi0.addEventListener("mouseleave", mlBeeHiveLi0A);
-function moBeeHiveLi0A() {
-    beeHiveLi0A = document.createElement('img');
-    beeHiveLi0A.setAttribute("src", "./assets/favicon/beehivefavicon.png");
-    beeHiveLi0A.style.width = "40px";
-    beeHiveLi0A.style.height = "25px";
-    headerLi0.style.display = "flex";
-    headerLi0.style.alignItems = "center";
-    headerLi0.style.marginLeft = "-20px";
 
-    headerLi0.appendChild(beeHiveLi0A);
-    headerLi0.insertBefore(headerLi0A, headerLi0.children[2]);
-};
-function mlBeeHiveLi0A() {
-    headerLi0.removeChild(beeHiveLi0A);
-    headerLi0.style.marginLeft = "20px";
+beeHiveLi0A = document.createElement('img');
+beeHiveLi0A.setAttribute("src", "./assets/favicon/beehivefavicon.png");
+beeHiveLi0A.style.width = "40px";
+beeHiveLi0A.style.height = "25px";
+headerLi0.style.display = "flex";
+headerLi0.style.alignItems = "center";
+headerLi0.style.marginLeft = "-20px";
 
-};
+headerLi0.appendChild(beeHiveLi0A);
+headerLi0.insertBefore(headerLi0A, headerLi0.children[2]);
+
 headerLi1.addEventListener("mouseenter", moBeeHiveLi1A);
 headerLi1.addEventListener("mouseleave", mlBeeHiveLi1A);
 function moBeeHiveLi1A() {
@@ -119,3 +110,16 @@ function mlBeeHiveLi2A() {
     headerLi2.style.marginLeft = "20px";
     headerLi1.style.marginRight = "20px";
 };
+
+
+
+//Current listing grid
+
+let listingGridHeader = document.createElement('h1');
+let currentlistingsSection = document.querySelector('#section');
+let currentListingsHeader = document.querySelector('#currentListingsHeader');
+let currentListingsContainer = document.querySelector('#currentListingsContainer');
+currentListingsHeader.appendChild(listingGridHeader);
+listingGridHeader.textContent = "Current Listings";
+currentListingsHeader.style.margin = "auto";
+

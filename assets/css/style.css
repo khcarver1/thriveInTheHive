@@ -28,6 +28,11 @@ header {
     flex-wrap: nowrap;
     white-space: nowrap;
 }
+#header-title h1 a {
+    text-decoration: none;
+    color: black;
+    text-shadow: 1px 1px 5px var(--color-three);
+}
 
 header img {
     width: 160px;
@@ -105,7 +110,6 @@ h3 {
     flex-direction: column;
     color: var(--color-four);
     margin: 5px;
-
 }
 
 #ask-a-question-submit {
